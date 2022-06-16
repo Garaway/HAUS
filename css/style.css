@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.head {
+  display: flex;
+}
+.head__site-nav {
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  display: flex;
+  max-width: 1320px;
+  justify-content: space-between;
+  padding-left: 4.16667%;
+  padding-right: 4.16667%;
+}
+.head__primary-menu, .head__end-menu {
+  margin: 0;
+  padding: 0;
+}
+.head__link {
+  margin-left: 60px;
+}
+.head__link:nth-child(1) {
+  margin-left: 0;
+}
+.head__item {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Apple SD Gothic Neo";
+  display: inline-block;
+}
+.head__item:after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #fff;
+  padding-bottom: -2px;
+  transform: scaleX(1);
+  transform-origin: 0 50%;
+  transition: transform 0.25s ease-in-out;
+}
+.head__underline-hover:after {
+  content: "";
+  display: block;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+}
+.head__underline-hover:hover:after {
+  transform: scaleX(1);
+  transition: transform 0.25s ease-in-out;
+  transform-origin: 0 50%;
+}
+.head__logo {
+  position: absolute;
+  width: 100px;
+  top: -20px;
+  left: 45%;
+  fill: white;
+}
+.head__fon {
+  width: 100%;
+  max-width: 720px;
+  height: 100vh;
+  object-fit: cover;
+  background: url("../img/Rectangle.png");
+}
+.head__text {
+  width: 100%;
+  background-color: #996B60;
+  padding: 200px 0 0 60px;
+  color: aliceblue;
+}
+.head__tagline {
+  font-size: 74px;
+  font-family: Liberation Serif;
+  font-weight: 400;
+}
+.head__word {
+  font-size: 18px;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  width: 100%;
+  max-width: 550px;
+  margin-bottom: 46px;
+}
+.head__custom-btn {
+  width: 180px;
+  height: 52px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.head__btn {
+  background: white;
+  z-index: 1;
+  border: 1px solid white;
+}
+.head__btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: #996B60;
+  transition: all 0.5s ease;
+}
+.head__btn:hover {
+  color: #fff;
+}
+.head__btn:hover:after {
+  right: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
