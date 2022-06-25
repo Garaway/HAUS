@@ -1,18 +1,36 @@
+@import "inventory/inventory";
+@import "mixin/mixin";
+@import "aperitifs/aperitifs";
+@import "gallery/gallery";
+
+
+
 
 body {
   margin: 0;
   padding: 0;
+  background-color: antiquewhite;
 }
 
 .main {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  background-color: white;
 }
 
 
 .head {
   display: flex;
+  padding-bottom: 200px;
+
+  &__menu-background {
+    position: fixed;
+    background-color: #356b6b;
+    width: 100%;
+    height: 84px;
+    z-index: 4;
+  }
 
   &__site-nav {
     position: fixed;
@@ -23,7 +41,9 @@ body {
     justify-content: space-between;
     padding-left: 4.16667%;
     padding-right: 4.16667%;
+    z-index: 2;
   }
+
 
   &__primary-menu, &__end-menu {
     margin: 0;
@@ -46,6 +66,10 @@ body {
     font-family: "Apple SD Gothic Neo";
     display: inline-block;
 
+    &:hover {
+      color: white;
+    }
+
     &:after {
       content: "";
       display: block;
@@ -61,22 +85,28 @@ body {
     content: "";
     display: block;
     transform: scaleX(0);
-    transform-origin: 100% 50%
+    transform-origin: 100% 50%;
   }
 
   &__underline-hover:hover:after {
     transform: scaleX(1);
     transition: transform .25s ease-in-out;
-    transform-origin: 0 50%
+    transform-origin: 0 50%;
   }
 
-
   &__logo {
-    position: absolute;
-    width: 100px;
-    top: -20px;
-    left: 45%;
+    position: fixed;
+    width: 76px;
+    top: 22px;
+    left: 47.19%;
     fill: white;
+  }
+
+  &__back {
+    background-color: aliceblue;
+    z-index: 1;
+    width: 1000px;
+    height: 40vh;
   }
 
   &__fon {
@@ -84,7 +114,7 @@ body {
     max-width: 720px;
     height: 100vh;
     object-fit: cover;
-    background: url("../img/Rectangle.png");
+    background: url("../img/Rectangle.png")no-repeat top;
   }
 
   &__text {
@@ -120,6 +150,7 @@ body {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
+    margin-bottom: 100px;
   }
 
   &__btn {
@@ -151,8 +182,15 @@ body {
 }
 
 
+.underline-hover:after {
+  content: "";
+  display: block;
+  transform: scaleX(1);
+  transform-origin: 100% 50%;
+}
 
-
-
-
-
+.underline-hover:hover:after {
+  transform: scaleX(0);
+  transition: transform .25s ease-in-out;
+  transform-origin: 0 50%;
+}

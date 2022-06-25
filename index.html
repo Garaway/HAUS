@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>HAUS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="short icon" href="img/favicon.jpg" alt="favicon">
+    <link alt="favicon" href="img/favicon.jpg" rel="short icon">
 </head>
 <body>
 <main class="main">
     <header class="head">
-        <div class="head__site-nav">
+        <div class="head__menu-background">
+            <div class="head__site-nav">
                 <nav role="navigation" class="head__primary-menu">
                     <span class="head__link"><a class="head__item head__underline-hover" href="#">Shop</a></span>
                     <span class="head__link"><a class="head__item head__underline-hover" href="#">Starter kits</a></span>
@@ -23,15 +25,97 @@
                     <span class="head__link"><a class="head__item head__underline-hover" href="#">Account</a></span>
                     <span class="head__link"><a class="head__item head__underline-hover" href="#">Cart</a></span>
                 </nav>
+            </div>
         </div>
         <div class="head__fon" alt="fon"></div>
         <div class="head__text">
             <h1 class="head__tagline">Alcohol for the modern drinker</h1>
-            <p class="head__word">Light and refreshing flavors made with real, clean ingredients you can feel good
-                about. Just pour, sip, and enjoy.</p>
+            <p class="head__word">Light and refreshing flavors made with real, clean ingredients you can feel good about. Just pour, sip, and enjoy.</p>
             <button class="head__custom-btn head__btn">Shop Now</button>
         </div>
     </header>
+    <section class="inventory">
+        <h1 class="inventory__text">Made with natural ingredients, nothing fake</h1>
+        <a class="inventory__item underline-hover" href="#">SHOP ALL FLAVORS</a>
+        <div class="inventory__content">
+            <div class="inventory__content--block">
+                <img class="inventory__content-img" alt="wine" src="img/Haus-StrawberryBasil-V3_540x.jpg">
+                <h2 class="inventory__content-name">Strawberry Basil</h2>
+                <p class="inventory__content-text">This seasonal aperitif is a way to savor summer, with ripe strawberry, basil, and jasmine.</p>
+                <button class="inventory__custom-btn inventory__btn">Shop Now</button>
+            </div>
+            <div class="inventory__content--block">
+                <img class="inventory__content-img" alt="wine" src="img/Haus-LemonLavender-V3_540x.jpg">
+                <h2 class="inventory__content-name">Lemon Lavender</h2>
+                <p class="inventory__content-text">With fresh lavender, juicy citrus, and wild botanicals, this apéritif is bright and herbaceous.</p>
+                <button class="inventory__custom-btn inventory__btn">Shop Now</button>
+            </div>
+            <div class="inventory__content--block">
+                <img class="inventory__content-img" alt="wine"
+                     src="img/Haus-PDP-Hero-Pomegranate-Rosemary-V3copy_540x.jpg">
+                <h2 class="inventory__content-name">Pomegranate Rosemary</h2>
+                <p class="inventory__content-text">Bright and earthy, Pomegranate Rosemary has punchy notes of
+                    pomegranate, berries, and woody herbs.</p>
+                <button class="inventory__custom-btn inventory__btn">Shop Now</button>
+            </div>
+            <div class="inventory__content--block">
+                <img class="inventory__content-img" alt="wine" src="img/Haus-GrapefruitJalapeno-V3_540x.jpg">
+                <h2 class="inventory__content-name">Grapefruit Jalapeño</h2>
+                <p class="inventory__content-text">Light and refreshing, this aperitif is a bright blend of citrus with a subtle kick of fresh jalapeño.</p>
+                <button class="inventory__custom-btn inventory__btn">Shop Now</button>
+            </div>
+            <div class="inventory__content--block">
+                <img class="inventory__content-img" alt="wine" src="img/Haus-BitterClove-V3_540x.jpg">
+                <h2 class="inventory__content-name">New Fashioned</h2>
+                <p class="inventory__content-text">Spiced and smooth, this apéritif combines warm spices with herbal roots and orange peel.</p>
+                <button class="inventory__custom-btn inventory__btn">Shop Now</button>
+            </div>
+            <div class="inventory__content--block">
+                <img class="inventory__content-img" alt="wine" src="img/Haus-SpicedCherry-V3_540x.jpg">
+                <h2 class="inventory__content-name">Spiced Cherry</h2>
+                <p class="inventory__content-text">Rich and fruit-forward with earthy spices, this apéritif lets cherry's natural flavor shine.</p>
+                <button class="inventory__custom-btn inventory__btn">Shop Now</button>
+            </div>
+        </div>
+    </section>
+    <section class="aperitifs">
+        <div class="aperitifs__content">
+            <img class="aperitifs__img" src="img/trRULjg_1080x.jpg" alt="wine">
+            <div class="aperitifs__content--text">
+                <h1 class="aperitifs__content-name">Low ABV Aperitifs</h1>
+                <p class="aperitifs__content-word">Each Haus apéritif is unique and complex, lower in alcohol, and ideal to sip for any occasion. We make our apéritifs with only real ingredients, so there's no wrong choice.</p>
+                <p class="aperitifs__content-word">Their lighter alcohol (half of what you find in traditional liquor) makes them perfect to sip all evening without the blur in the morning.</p>
+                <a class="aperitifs__item underline-hover" href="#">SHOP ALL FLAVORS</a>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="gallery__content">
+            <div class="gallery__content--block">
+                <h1 class="gallery__content--name">Easy to drink</h1>
+                <p class="gallery__content--text">The perfect anytime drink, sip Haus on its own or with simple mixers you probably already have like soda or tonic.</p>
+                <h1 class="gallery__content--name">Natural ingredients. Nothing fake.</h1>
+                <p class="gallery__content--text">Artificial ingredients and refined sugars are a big culprit in hangovers. Feel good about what’s in your glass that night — and the next day.</p>
+                <h1 class="gallery__content--name">Delivered to your door</h1>
+                <p class="gallery__content--text">We blend, bottle, and ship our products straight from Sonoma, CA to your doorstep.</p>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide gallery__carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/haus-1.jpeg" class="d-block w-100 gallery__img" alt="wine">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/p-1-a-new-drink-thinks-it-can-succeed-where-aperol-has-failed.jpeg" class="d-block w-100 gallery__img" alt="wine">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/value-props-poster.jpeg" class="d-block w-100 gallery__img"  alt="wine">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
