@@ -181,6 +181,196 @@
   object-fit: cover;
 }
 
+.comment {
+  background-color: black;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.comment__content {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.comment__block {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin-top: 40px;
+}
+.comment__favicon {
+  fill: white;
+  margin-bottom: 30px;
+}
+.comment__text {
+  color: white;
+  margin-bottom: 20px;
+}
+.comment__text-i {
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+.history__content {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  margin: 40px auto;
+  justify-content: space-between;
+}
+.history__img {
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+}
+.history__text {
+  width: 100%;
+  max-width: 650px;
+  font-family: "Adobe Caslon Pro";
+}
+.history__text-h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+.history__text-p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.history__item {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: "Apple SD Gothic Neo";
+}
+.history__item:hover {
+  color: black;
+}
+.history__item:after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid black;
+  padding-bottom: -2px;
+  transform: scaleX(1);
+  transform-origin: 0 50%;
+  transition: transform 0.25s ease-in-out;
+}
+
+.spotify {
+  background: url("../../img/image.jpg") no-repeat center;
+  width: 100%;
+  object-fit: cover;
+}
+.spotify__content {
+  padding: 50px;
+}
+.spotify__block {
+  background-color: black;
+  width: 100%;
+  max-width: 550px;
+  height: 303px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 48px;
+}
+.spotify__block-h1 {
+  font-family: "Adobe Caslon Pro";
+  margin-bottom: 26px;
+  font-size: 54px;
+  font-weight: 300;
+}
+.spotify__block-p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 42px;
+}
+.spotify__custom-btn {
+  width: 180px;
+  height: 52px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 100px;
+}
+.spotify__btn {
+  background: white;
+  z-index: 1;
+  border: 1px solid white;
+}
+.spotify__btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: black;
+  transition: all 0.5s ease;
+}
+.spotify__btn:hover {
+  color: #fff;
+}
+.spotify__btn:hover:after {
+  right: 0;
+  width: 100%;
+}
+.spotify__info {
+  background-color: black;
+  width: 100%;
+  max-width: 550px;
+  height: 152px;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+.spotify__info-p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.spotify__link {
+  list-style-type: none;
+}
+.spotify__item {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  cursor: pointer;
+}
+.spotify__item:hover {
+  color: white;
+}
+.spotify__item:after {
+  content: "";
+  display: block;
+  padding-bottom: -2px;
+  transform: scaleX(0);
+  transform-origin: 50% 0;
+  transition: transform 0.6s ease-in-out;
+}
+.spotify__underline-hover:after {
+  content: "";
+  display: block;
+  transform: scaleX(1);
+  transform-origin: 100% 50%;
+}
+.spotify__underline-hover:hover:after {
+  transform: scaleX(0);
+  transition: transform 0.6s ease-in-out;
+  border-bottom: 2px solid white;
+  transform-origin: 0 50%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -198,19 +388,22 @@ body {
   display: flex;
   padding-bottom: 200px;
 }
-.head__menu-background {
+.head__show {
   position: fixed;
-  background-color: #356b6b;
+  background-color: #145454;
   width: 100%;
   height: 84px;
   z-index: 4;
+  left: 0;
+  top: 0;
+  transition: transform 0.4s linear;
 }
 .head__site-nav {
   position: fixed;
-  top: 40px;
+  top: 32px;
   width: 100%;
   display: flex;
-  max-width: 1320px;
+  margin: 0 auto;
   justify-content: space-between;
   padding-left: 4.16667%;
   padding-right: 4.16667%;
@@ -246,17 +439,6 @@ body {
   transform-origin: 0 50%;
   transition: transform 0.25s ease-in-out;
 }
-.head__underline-hover:after {
-  content: "";
-  display: block;
-  transform: scaleX(0);
-  transform-origin: 100% 50%;
-}
-.head__underline-hover:hover:after {
-  transform: scaleX(1);
-  transition: transform 0.25s ease-in-out;
-  transform-origin: 0 50%;
-}
 .head__logo {
   position: fixed;
   width: 76px;
@@ -273,13 +455,12 @@ body {
 .head__fon {
   width: 100%;
   max-width: 720px;
-  height: 100vh;
   object-fit: cover;
   background: url("../img/Rectangle.png") no-repeat top;
 }
 .head__text {
   width: 100%;
-  background-color: #996B60;
+  background-color: #145454;
   padding: 200px 0 0 60px;
   color: aliceblue;
 }
@@ -322,7 +503,7 @@ body {
   top: 0;
   right: 0;
   z-index: -1;
-  background: #996B60;
+  background: #145454;
   transition: all 0.5s ease;
 }
 .head__btn:hover {
@@ -344,6 +525,10 @@ body {
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
   transform-origin: 0 50%;
+}
+
+.head__show.head__hide {
+  transform: translateY(-84px);
 }
 
 /*# sourceMappingURL=style.css.map */

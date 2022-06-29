@@ -1,0 +1,38 @@
+
+
+.comment {
+  background-color: black;
+  width: 100%;
+  padding-bottom: 50px;
+
+  &__content {
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  &__block {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  &__favicon {
+    fill: white;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  &__text-i {
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+  }
+
+}

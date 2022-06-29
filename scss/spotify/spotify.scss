@@ -1,0 +1,135 @@
+
+
+  .spotify {
+    background: url("../../img/image.jpg")no-repeat center;
+    //height: 60vh;
+    width: 100%;
+    object-fit: cover;
+
+    &__content {
+      padding: 50px;
+    }
+
+    &__block {
+      background-color: black;
+      width: 100%;
+      max-width: 550px;
+      height: 303px;
+      margin-bottom: 20px;
+      color: white;
+      text-align: center;
+      padding-top: 48px;
+    }
+
+    &__block-h1 {
+      font-family: "Adobe Caslon Pro";
+      margin-bottom: 26px;
+      font-size: 54px;
+      font-weight: 300;
+    }
+
+    &__block-p {
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 42px;
+    }
+
+    &__custom-btn {
+      width: 180px;
+      height: 52px;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: "Helvetica Neue";
+      font-weight: 400;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 100px;
+    }
+
+    &__btn {
+      background: white;
+      z-index: 1;
+      border: 1px solid white;
+    }
+
+    &__btn:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background: black;
+      transition: all 0.5s ease;
+    }
+
+    &__btn:hover {
+      color: #fff;
+    }
+
+    &__btn:hover:after {
+      right: 0;
+      width: 100%;
+    }
+
+    &__info {
+      background-color: black;
+      width: 100%;
+      max-width: 550px;
+      height: 152px;
+      color: white;
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    &__info-p {
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      list-style-type: none;
+    }
+
+    &__item {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      display: inline-block;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        //border-bottom: 2px solid white;
+        padding-bottom: -2px;
+        transform: scaleX(0);
+        transform-origin: 50% 0;
+        transition: transform 0.6s ease-in-out;
+      }
+    }
+
+    &__underline-hover:after {
+      content: "";
+      display: block;
+      transform: scaleX(1);
+      transform-origin: 100% 50%;
+    }
+
+    &__underline-hover:hover:after {
+      transform: scaleX(0);
+      transition: transform 0.6s ease-in-out;
+      border-bottom: 2px solid white;
+      transform-origin: 0 50%;
+    }
+
+  }
+
