@@ -1,0 +1,133 @@
+
+
+  .footer {
+    background-color: black;
+
+    &__content {
+      color: white;
+      display: flex;
+      width: 100%;
+      max-width: 1320px;
+      margin: 0 auto;
+      padding-top: 60px;
+      justify-content: space-between;
+      margin-bottom: 200px;
+    }
+
+    &__post-input {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    &__post-input-h1 {
+      font-family: "Adobe Caslon Pro";
+      font-size: 46px;
+      margin-bottom: 50px;
+    }
+
+    &__post-input-p {
+      width: 100%;
+      max-width: 400px;
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 50px;
+    }
+
+    &__input {
+      background: none;
+      border: none;
+      width: 100%;
+      max-width: 300px;
+      position: absolute;
+      left: 60px;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: white;
+    }
+
+    &__button {
+      border: none;
+      background-color: black;
+      color: white;
+      width: 100%;
+      max-width: 400px;
+      text-align: end;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    &__border {
+      border-bottom: 1px solid white;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    &__link {
+      display: grid;
+    }
+
+    &__link {
+      margin-bottom: 16px;
+    }
+
+    &__menu--name {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    &__item {
+      color: #a6a4a4;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      font-size: 14px;
+      font-weight: 300;
+      transition: 0.6s;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    &__info {
+      width: 100%;
+      max-width: 1320px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__info--display {
+      display: flex;
+    }
+
+    &__info--display-p {
+      color: #a6a4a4;
+      text-transform: uppercase;
+      margin-left: 40px;
+      font-size: 14px;
+
+      &:first-child {
+        color: white;
+        margin-left: 0;
+      }
+    }
+
+    &__arrow {
+      text-align: end;
+      color: #a6a4a4;
+
+      &:hover {
+        color: #a6a4a4;
+      }
+    }
+
+    &__bi-arrow-up {
+      width: 20px;
+      height: 20px;
+    }
+  }
